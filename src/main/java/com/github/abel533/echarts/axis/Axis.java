@@ -27,6 +27,7 @@ package com.github.abel533.echarts.axis;
 import com.github.abel533.echarts.AbstractData;
 import com.github.abel533.echarts.Component;
 import com.github.abel533.echarts.code.AxisType;
+import com.github.abel533.echarts.code.NameLocation;
 import com.github.abel533.echarts.code.X;
 import com.github.abel533.echarts.code.Y;
 import lombok.Getter;
@@ -139,6 +140,8 @@ public abstract class Axis<T> extends AbstractData<T> implements Component {
 	private Number minInterval;
 
 	private int offset;
+
+	private NameLocation nameLocation;
 
 	public Boolean scale() {
 		return this.scale;
@@ -558,4 +561,14 @@ public abstract class Axis<T> extends AbstractData<T> implements Component {
 		this.offset = offset;
 		return (T) this;
 	}
+
+	public NameLocation nameLocation() {
+		return this.nameLocation;
+	}
+
+	public T nameLocation(NameLocation nameLocation) {
+		this.nameLocation = nameLocation;
+		return (T) nameLocation;
+	}
+
 }
