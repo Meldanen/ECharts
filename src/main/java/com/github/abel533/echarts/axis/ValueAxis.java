@@ -25,7 +25,6 @@
 package com.github.abel533.echarts.axis;
 
 import com.github.abel533.echarts.code.AxisType;
-import com.github.abel533.echarts.style.LineStyle;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -37,10 +36,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ValueAxis extends Axis<ValueAxis> {
-	/**
-	 * 坐标轴名称文字样式，默认取全局配置，颜色跟随axisLine主色，可设
-	 */
-	private LineStyle nameTextStyle;
 	/**
 	 * 小数精度，默认为0，无小数点
 	 */

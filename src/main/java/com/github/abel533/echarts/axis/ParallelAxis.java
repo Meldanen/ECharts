@@ -2,7 +2,6 @@ package com.github.abel533.echarts.axis;
 
 import com.github.abel533.echarts.code.AxisType;
 import com.github.abel533.echarts.style.AreaSelectStyle;
-import com.github.abel533.echarts.style.NameTextStyle;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -31,10 +30,6 @@ public class ParallelAxis extends Axis<ParallelAxis> {
 	 * 在坐标轴上可以进行框选，这里是一些框选的设置
 	 */
 	private AreaSelectStyle areaSelectStyle;
-	/**
-	 * 坐标轴名称的文字样式
-	 */
-	private NameTextStyle nameTextStyle;
 
 	/**
 	 * 构造函数
