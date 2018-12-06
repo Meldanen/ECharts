@@ -30,6 +30,8 @@ import com.github.abel533.echarts.code.AxisType;
 import com.github.abel533.echarts.code.NameLocation;
 import com.github.abel533.echarts.code.X;
 import com.github.abel533.echarts.code.Y;
+import com.github.abel533.echarts.style.NameTextStyle;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -142,6 +144,10 @@ public abstract class Axis<T> extends AbstractData<T> implements Component {
 	private int offset;
 
 	private NameLocation nameLocation;
+
+	private Double nameRotate;
+
+	private NameTextStyle nameTextStyle;
 
 	public Boolean scale() {
 		return this.scale;
@@ -569,6 +575,24 @@ public abstract class Axis<T> extends AbstractData<T> implements Component {
 	public T nameLocation(NameLocation nameLocation) {
 		this.nameLocation = nameLocation;
 		return (T) nameLocation;
+	}
+
+	public Double nameRotate() {
+		return this.nameRotate;
+	}
+
+	public T nameRotate(Double nameRotate) {
+		this.nameRotate = nameRotate;
+		return (T) nameRotate;
+	}
+
+	public NameTextStyle nameTextStyle() {
+		return this.nameTextStyle;
+	}
+
+	public T nameTextStyle(NameTextStyle nameTextStyle) {
+		this.nameTextStyle = nameTextStyle;
+		return (T) nameTextStyle;
 	}
 
 }
