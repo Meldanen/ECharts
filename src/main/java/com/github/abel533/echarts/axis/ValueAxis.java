@@ -112,24 +112,4 @@ public class ValueAxis extends Axis<ValueAxis> {
 		return this;
 	}
 
-	/**
-	 * 坐标轴名称文字样式，默认取全局配置，颜色跟随axisLine主色，可设
-	 */
-	public LineStyle nameTextStyle() {
-		if (this.nameTextStyle == null) {
-			this.nameTextStyle = new LineStyle();
-		}
-		return this.nameTextStyle;
-	}
-
-	/**
-	 * 设置style值
-	 *
-	 * @param style
-	 */
-	public ValueAxis nameTextStyle(LineStyle style) {
-		this.nameTextStyle = style;
-		return this;
-	}
-
 }

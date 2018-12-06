@@ -82,15 +82,4 @@ public class ParallelAxis extends Axis<ParallelAxis> {
 		return this;
 	}
 
-	public NameTextStyle nameTextStyle() {
-		if (this.nameTextStyle == null) {
-			this.nameTextStyle = new NameTextStyle();
-		}
-		return this.nameTextStyle;
-	}
-
-	public ParallelAxis nameTextStyle(NameTextStyle nameTextStyle) {
-		this.nameTextStyle = nameTextStyle;
-		return this;
-	}
 }
