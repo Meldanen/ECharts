@@ -28,13 +28,44 @@ package com.github.abel533.echarts.feature;
  * @author liuzh
  */
 public class DataView extends Feature {
-    /**
-     * 构造函数
-     */
-    public DataView() {
-        this.show(true);
-        this.title("数据视图");
-        this.readOnly(false);
-        this.lang(new String[]{"数据视图", "关闭", "刷新"});
-    }
+
+	private String buttonColor;
+	private String buttonTextColor;
+
+	/**
+	 * 构造函数
+	 */
+	public DataView() {
+		this.show(true);
+		this.title("数据视图");
+		this.readOnly(false);
+		this.lang(new String[]{"数据视图", "关闭", "刷新"});
+		this.buttonColor("#c23531");
+		this.buttonTextColor("#fff");
+	}
+
+	public String buttonColor() {
+		return this.buttonColor;
+	}
+
+	/**
+	 * @param buttonColor
+	 */
+	public DataView buttonColor(String buttonColor) {
+		this.buttonColor = buttonColor;
+		return this;
+	}
+
+	public String buttonTextColor() {
+		return this.buttonTextColor;
+	}
+
+	/**
+	 *
+	 * @param buttonTextColor
+	 */
+	public DataView buttonTextColor(String buttonTextColor) {
+		this.buttonTextColor = buttonTextColor;
+		return this;
+	}
 }
