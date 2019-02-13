@@ -108,6 +108,8 @@ public class Tooltip extends Basic<Tooltip> implements Component {
 	 */
 	private Boolean alwaysShowContent;
 
+	private boolean confine;
+
 	public Boolean alwaysShowContent() {
 		return this.alwaysShowContent;
 	}
@@ -362,6 +364,23 @@ public class Tooltip extends Basic<Tooltip> implements Component {
 	 */
 	public Tooltip extraCssText(String extraCssText) {
 		this.extraCssText = extraCssText;
+		return this;
+	}
+
+	/**
+	 * confine
+	 */
+	public boolean confine() {
+		return this.confine;
+	}
+
+	/**
+	 * confine
+	 *
+	 * @param confine
+	 */
+	public Tooltip confine(boolean confine) {
+		this.confine = confine;
 		return this;
 	}
 }
