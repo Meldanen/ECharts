@@ -149,6 +149,8 @@ public abstract class Axis<T> extends AbstractData<T> implements Component {
 
 	private NameTextStyle nameTextStyle;
 
+	private Number splitNumber;
+
 	public Boolean scale() {
 		return this.scale;
 	}
@@ -593,6 +595,15 @@ public abstract class Axis<T> extends AbstractData<T> implements Component {
 	public T nameTextStyle(NameTextStyle nameTextStyle) {
 		this.nameTextStyle = nameTextStyle;
 		return (T) nameTextStyle;
+	}
+
+	public Number splitNumber() {
+		return this.splitNumber;
+	}
+
+	public T splitNumber(Number splitNumber) {
+		this.splitNumber = splitNumber;
+		return (T) splitNumber;
 	}
 
 }
