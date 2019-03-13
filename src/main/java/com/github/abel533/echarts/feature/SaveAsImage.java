@@ -29,7 +29,7 @@ package com.github.abel533.echarts.feature;
  */
 public class SaveAsImage extends Feature {
 
-	private Object backgroundColour;
+	private Object backgroundColor;
 
 	/**
 	 * 构造函数
@@ -41,15 +41,15 @@ public class SaveAsImage extends Feature {
 	}
 
 	public Object backgroundColour() {
-		return this.backgroundColour;
+		return this.backgroundColor;
 	}
 
 	/**
 	 *
-	 * @param backgroundColour
+	 * @param backgroundColor
 	 */
-	public Object backgroundColour(Object backgroundColour) {
-		this.backgroundColour = backgroundColour;
+	public Object backgroundColour(Object backgroundColor) {
+		this.backgroundColor = backgroundColor;
 		return this;
 	}
 }

@@ -32,7 +32,7 @@ public class DataView extends Feature {
 	private String buttonColor;
 	private String buttonTextColor;
 	private Object optionToContent;
-	private Object backgroundColour;
+	private Object backgroundColor;
 
 	/**
 	 * 构造函数
@@ -77,23 +77,23 @@ public class DataView extends Feature {
 
 	/**
 	 *
-	 * @param backgroundColour
+	 * @param optionToContent
 	 */
 	public DataView optionToContent(Object optionToContent) {
 		this.optionToContent = optionToContent;
 		return this;
 	}
 
-	public Object backgroundColour() {
-		return this.backgroundColour;
+	public Object backgroundColor() {
+		return this.backgroundColor;
 	}
 
 	/**
 	 *
-	 * @param backgroundColour
+	 * @param backgroundColor
 	 */
-	public Object backgroundColour(Object backgroundColour) {
-		this.backgroundColour = backgroundColour;
+	public Object backgroundColour(Object backgroundColor) {
+		this.backgroundColor = backgroundColor;
 		return this;
 	}
 
