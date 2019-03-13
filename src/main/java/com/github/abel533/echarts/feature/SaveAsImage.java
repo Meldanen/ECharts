@@ -40,7 +40,7 @@ public class SaveAsImage extends Feature {
 		this.type("png");
 	}
 
-	public Object backgroundColour() {
+	public Object backgroundColor() {
 		return this.backgroundColor;
 	}
 
@@ -48,7 +48,7 @@ public class SaveAsImage extends Feature {
 	 *
 	 * @param backgroundColor
 	 */
-	public Object backgroundColour(Object backgroundColor) {
+	public Object backgroundColor(Object backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}

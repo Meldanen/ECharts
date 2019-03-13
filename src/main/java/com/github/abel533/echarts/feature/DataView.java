@@ -92,7 +92,7 @@ public class DataView extends Feature {
 	 *
 	 * @param backgroundColor
 	 */
-	public Object backgroundColour(Object backgroundColor) {
+	public Object backgroundColor(Object backgroundColor) {
 		this.backgroundColor = backgroundColor;
 		return this;
 	}
