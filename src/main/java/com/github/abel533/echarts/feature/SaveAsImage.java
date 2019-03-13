@@ -28,6 +28,9 @@ package com.github.abel533.echarts.feature;
  * @author liuzh
  */
 public class SaveAsImage extends Feature {
+
+	private Object backgroundColour;
+
 	/**
 	 * 构造函数
 	 */
@@ -35,5 +38,18 @@ public class SaveAsImage extends Feature {
 		this.show(true);
 		this.title("保存为图片");
 		this.type("png");
+	}
+
+	public Object backgroundColour() {
+		return this.backgroundColour;
+	}
+
+	/**
+	 *
+	 * @param backgroundColour
+	 */
+	public Object backgroundColour(Object backgroundColour) {
+		this.backgroundColour = backgroundColour;
+		return this;
 	}
 }
