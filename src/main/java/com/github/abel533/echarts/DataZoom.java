@@ -24,14 +24,16 @@
 
 package com.github.abel533.echarts;
 
+import java.util.Date;
+
 import com.github.abel533.echarts.code.DataZoomType;
 import com.github.abel533.echarts.code.FilterMode;
 import com.github.abel533.echarts.code.Orient;
+import com.github.abel533.echarts.code.RangeModeEnum;
 import com.github.abel533.echarts.style.TextStyle;
-import lombok.Getter;
-import lombok.Setter;
 
-import java.util.Date;
+import jdk.nashorn.internal.objects.annotations.Getter;
+import jdk.nashorn.internal.objects.annotations.Setter;
 
 /**
  * 数据区域缩放。与toolbox.feature.dataZoom同步，仅对直角坐标系图表有效
@@ -137,6 +139,8 @@ public class DataZoom extends Basic<DataZoom> implements Component {
 	private Object minValueSpan;
 
 	private String handleIcon;
+
+	private RangeModeEnum[] rangeMode;
 
 	public String labelPrecision() {
 		return this.labelPrecision;
@@ -526,5 +530,22 @@ public class DataZoom extends Basic<DataZoom> implements Component {
 	 */
 	public String handleIcon() {
 		return this.handleIcon;
+	}
+
+	/**
+	 * rangeMode
+	 *
+	 * @param rangeMode
+	 */
+	public DataZoom rangeMode(RangeModeEnum... rangeMode) {
+		this.rangeMode = rangeMode;
+		return this;
+	}
+
+	/**
+	 * handleIcon
+	 */
+	public RangeModeEnum[] rangeMode() {
+		return this.rangeMode;
 	}
 }
