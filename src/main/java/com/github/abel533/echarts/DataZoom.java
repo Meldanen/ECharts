@@ -18,8 +18,8 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
  * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
  */
 
 package com.github.abel533.echarts;
@@ -32,8 +32,8 @@ import com.github.abel533.echarts.code.Orient;
 import com.github.abel533.echarts.code.RangeModeEnum;
 import com.github.abel533.echarts.style.TextStyle;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * 数据区域缩放。与toolbox.feature.dataZoom同步，仅对直角坐标系图表有效
@@ -43,6 +43,7 @@ import jdk.nashorn.internal.objects.annotations.Setter;
 @Getter
 @Setter
 public class DataZoom extends Basic<DataZoom> implements Component {
+
 	/**
 	 * 类型
 	 */
