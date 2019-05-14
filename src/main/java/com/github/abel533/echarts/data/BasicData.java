@@ -216,7 +216,7 @@ public abstract class BasicData<T> implements Serializable {
 			return (T) this;
 		}
 		if (this.value == null) {
-			this.value = new ArrayList<>(values.length);
+			this.value = new ArrayList(values.length);
 		}
 		if (this.value instanceof List) {
 			((List) this.value).addAll(Arrays.asList(values));
