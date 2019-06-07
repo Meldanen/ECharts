@@ -305,14 +305,14 @@ public abstract class Series<T> extends AbstractData<T> implements Chart {
 		return (T) this;
 	}
 
-	public T label(ItemStyle label) {
+	public T label(Label label) {
 		this.label = label;
 		return (T) this;
 	}
 
-	public ItemStyle label() {
+	public Label label() {
 		if (this.label == null) {
-			this.label = new ItemStyle();
+			this.label = new Label();
 		}
 		return this.label;
 	}
