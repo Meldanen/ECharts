@@ -26,6 +26,7 @@ package com.github.abel533.echarts.series;
 
 import com.github.abel533.echarts.AbstractData;
 import com.github.abel533.echarts.Chart;
+import com.github.abel533.echarts.Label;
 import com.github.abel533.echarts.Tooltip;
 import com.github.abel533.echarts.code.*;
 import com.github.abel533.echarts.style.ItemStyle;
@@ -160,7 +161,7 @@ public abstract class Series<T> extends AbstractData<T> implements Chart {
 	 * 中放置于itemStyle.normal下，在 ECharts 3 中为了让整个配置项结构更扁平合理，label被拿出来跟 itemStyle
 	 * 平级，并且跟 itemStyle 一样拥有 normal, emphasis 两个状态
 	 */
-	private ItemStyle label;
+	private Label label;
 
 	/**
 	 * 坐标系
