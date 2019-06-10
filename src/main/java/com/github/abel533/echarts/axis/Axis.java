@@ -148,6 +148,8 @@ public abstract class Axis<T> extends AbstractData<T> implements Component {
 	private Double nameRotate;
 
 	private NameTextStyle nameTextStyle;
+	
+	private AxisPointer axisPointer;
 
 	public Boolean scale() {
 		return this.scale;
@@ -593,6 +595,22 @@ public abstract class Axis<T> extends AbstractData<T> implements Component {
 	public T nameTextStyle(NameTextStyle nameTextStyle) {
 		this.nameTextStyle = nameTextStyle;
 		return (T) nameTextStyle;
+	}
+	
+	public AxisPointer axisPointer() {
+		if (this.axisPointer == null) {
+			this.axisPointer = new AxisPointer();
+		}
+		return this.axisPointer;
+	}
+
+	/**
+	 * @param pointer
+	 * @return
+	 */
+	public T axisPointer(AxisPointer pointer) {
+		this.axisPointer = pointer;
+		return (T) this;
 	}
 
 }
