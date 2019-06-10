@@ -68,6 +68,8 @@ public class ItemStyle implements Serializable {
      */
     private Object childBorderColor;
 
+    private Double opacity;
+    
     /**
      * 获取normal值
      */
@@ -308,5 +310,14 @@ public class ItemStyle implements Serializable {
      */
     public void setColor0(Object color0) {
         this.color0 = color0;
+    }
+    
+    public Double opacity() {
+        return this.opacity;
+    }
+
+    public ItemStyle opacity(Double opacity) {
+        this.opacity = opacity;
+        return this;
     }
 }
