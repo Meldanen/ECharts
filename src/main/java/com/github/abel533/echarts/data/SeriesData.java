@@ -45,6 +45,7 @@ public class SeriesData implements Serializable {
     private Object value;
     private Tooltip tooltip;
     private ItemStyle itemStyle;
+    private Label label;
 
     /**
      * 构造函数,参数:value
@@ -193,5 +194,17 @@ public class SeriesData implements Serializable {
      */
     public void setItemStyle(ItemStyle itemStyle) {
         this.itemStyle = itemStyle;
+    }
+    
+    public Label label() {
+        if (this.label == null) {
+            this.label = new Label();
+        }
+        return this.label;
+    }
+
+    public SeriesData label(Label label) {
+        this.label = label;
+        return this;
     }
 }
