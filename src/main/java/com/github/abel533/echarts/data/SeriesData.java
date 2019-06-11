@@ -47,6 +47,7 @@ public class SeriesData implements Serializable {
     private Tooltip tooltip;
     private ItemStyle itemStyle;
     private Label label;
+    private Integer symbolSize;
 
     /**
      * 构造函数,参数:value
@@ -207,5 +208,14 @@ public class SeriesData implements Serializable {
     public SeriesData label(Label label) {
         this.label = label;
         return this;
+    }
+    
+    public Integer symbolSize() {
+        return this.symbolSize;
+    }
+
+    public T symbolSize(Integer symbolSize) {
+        this.symbolSize = symbolSize;
+        return (T) this;
     }
 }
