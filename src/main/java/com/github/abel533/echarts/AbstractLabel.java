@@ -78,6 +78,8 @@ public abstract class AbstractLabel<T> implements Serializable {
      * 颜色
      */
     private String color;
+    
+    private Integer distance;
 
     /**
      * 设置textStyle值
@@ -242,6 +244,15 @@ public abstract class AbstractLabel<T> implements Serializable {
      */
     public T margin(Integer margin) {
         this.margin = margin;
+        return (T) this;
+    }
+    
+    public Integer distance() {
+        return this.distance;
+    }
+
+    public T distance(Integer distance) {
+        this.distance = distance;
         return (T) this;
     }
 }
