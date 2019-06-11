@@ -24,6 +24,7 @@
 
 package com.github.abel533.echarts.data;
 
+import com.github.abel533.echarts.Label;
 import com.github.abel533.echarts.Tooltip;
 import com.github.abel533.echarts.style.ItemStyle;
 import lombok.Getter;
