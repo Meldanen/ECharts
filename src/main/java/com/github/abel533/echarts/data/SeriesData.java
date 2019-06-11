@@ -214,8 +214,8 @@ public class SeriesData implements Serializable {
         return this.symbolSize;
     }
 
-    public T symbolSize(Integer symbolSize) {
+    public SeriesData symbolSize(Integer symbolSize) {
         this.symbolSize = symbolSize;
-        return (T) this;
+        return (SeriesData) this;
     }
 }
