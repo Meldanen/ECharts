@@ -46,10 +46,6 @@ public class Boxplot extends Series<Boxplot> {
      * box 的宽度的上下限。数组的意思是：[min, max]
      */
     private Object[] boxWidth;
-    /**
-     * boxplot 图形样式，有 normal 和 emphasis 两个状态，normal 是图形正常的样式，emphasis 是图形高亮的样式，比如鼠标悬浮或者图例联动高亮的时候会使用 emphasis 作为图形的样式
-     */
-    private ItemStyle itemStyle;
 
     /**
      * 构造函数
@@ -91,15 +87,4 @@ public class Boxplot extends Series<Boxplot> {
         return this;
     }
 
-    public ItemStyle itemStyle() {
-        if (this.itemStyle == null) {
-            this.itemStyle = new ItemStyle();
-        }
-        return this.itemStyle;
-    }
-
-    public Boxplot itemStyle(ItemStyle itemStyle) {
-        this.itemStyle = itemStyle;
-        return this;
-    }
 }
