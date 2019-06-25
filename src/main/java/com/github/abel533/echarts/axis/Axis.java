@@ -148,10 +148,8 @@ public abstract class Axis<T> extends AbstractData<T> implements Component {
 	private Double nameRotate;
 
 	private NameTextStyle nameTextStyle;
-
+	
 	private AxisPointer axisPointer;
-
-	private int splitNumber;
 
 	public Boolean scale() {
 		return this.scale;
@@ -614,15 +612,5 @@ public abstract class Axis<T> extends AbstractData<T> implements Component {
 		this.axisPointer = pointer;
 		return (T) this;
 	}
-
-	public int splitNumber() {
-		return this.splitNumber;
-	}
-
-	public T splitNumber(int splitNumber) {
-		this.splitNumber = splitNumber;
-		return (T) this;
-	}
-
 
 }
