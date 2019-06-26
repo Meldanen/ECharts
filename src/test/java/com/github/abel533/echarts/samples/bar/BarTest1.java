@@ -64,7 +64,7 @@ public class BarTest1 {
         Bar bar2 = new Bar("降水量");
         List<Double> list = Arrays.asList(2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3);
         bar2.data(list);
-        bar2.markPoint().data(new PointData("年最高", 182.2).xAxis(7).yAxis(183).symbolSize(18), new PointData("年最低", 2.3).xAxis(11).yAxis(3));
+        bar2.markPoint().data(new PointData("年最高", 182.2).xAxis(7.0).yAxis(183.0).symbolSize(18), new PointData("年最低", 2.3).xAxis(11.0).yAxis(3.0));
         bar2.markLine().data(new PointData().type(MarkType.average).name("平均值"));
 
         option.series(bar, bar2);

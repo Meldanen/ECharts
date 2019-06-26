@@ -64,7 +64,7 @@ public class PieTest7 {
 
         int idx = 1;
         Pie pie = getPie(idx++).center("50%", "45%").radius("50%");
-        pie.label().normal().show(true).formatter("{b}{c}({d}%)");
+        pie.label().show(true).formatter("{b}{c}({d}%)");
         basic.series(pie);
         //加入
         option.options(basic);

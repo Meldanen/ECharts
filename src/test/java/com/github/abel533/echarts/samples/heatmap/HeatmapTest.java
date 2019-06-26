@@ -101,7 +101,7 @@ public class HeatmapTest {
 
         Heatmap heatmap = new Heatmap("Punch Card");
         heatmap.data(datas);
-        heatmap.label().normal().show(true);
+        heatmap.label().show(true);
         heatmap.itemStyle().emphasis().shadowBlur(10).shadowColor("rgba(0, 0, 0, 0.5)");
 
         option.series(heatmap);
