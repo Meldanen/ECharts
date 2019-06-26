@@ -33,4 +33,14 @@ import com.github.abel533.echarts.AbstractLabel;
  */
 public class AxisLabel extends AbstractLabel<AxisLabel> {
 
+	private Boolean showMaxLabel;
+	
+    public Boolean showMaxLabel() {
+        return this.showMaxLabel;
+    }
+
+    public AxisLabel show(Boolean showMaxLabel) {
+        this.showMaxLabel = showMaxLabel;
+        return this;
+    }
 }
