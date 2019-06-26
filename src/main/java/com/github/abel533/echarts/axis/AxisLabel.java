@@ -39,7 +39,7 @@ public class AxisLabel extends AbstractLabel<AxisLabel> {
         return this.showMaxLabel;
     }
 
-    public AxisLabel show(Boolean showMaxLabel) {
+    public AxisLabel showMaxLabel(Boolean showMaxLabel) {
         this.showMaxLabel = showMaxLabel;
         return this;
     }
