@@ -62,11 +62,11 @@ public class ItemStyle implements Serializable {
     /**
      * 二级边框宽度
      */
-    private Integer childBorderWidth;
+    private Integer borderWidth;
     /**
      * 二级边框颜色
      */
-    private Object childBorderColor;
+    private Object borderColor;
 
     private Double opacity;
     
@@ -165,37 +165,37 @@ public class ItemStyle implements Serializable {
     }
 
     /**
-     * 设置childBorderWidth值
+     * 设置borderWidth值
      *
-     * @param childBorderWidth
+     * @param borderWidth
      */
-    public ItemStyle childBorderWidth(Integer childBorderWidth) {
-        this.childBorderWidth = childBorderWidth;
+    public ItemStyle borderWidth(Integer borderWidth) {
+        this.borderWidth = borderWidth;
         return this;
     }
 
     /**
-     * 获取childBorderWidth值
+     * 获取borderWidth值
      */
-    public Integer childBorderWidth() {
-        return this.childBorderWidth;
+    public Integer borderWidth() {
+        return this.borderWidth;
     }
 
     /**
-     * 设置childBorderColor值
+     * 设置borderColor值
      *
-     * @param childBorderColor
+     * @param borderColor
      */
-    public ItemStyle childBorderColor(Object childBorderColor) {
-        this.childBorderColor = childBorderColor;
+    public ItemStyle borderColor(Object borderColor) {
+        this.borderColor = borderColor;
         return this;
     }
 
     /**
-     * 获取childBorderColor值
+     * 获取borderColor值
      */
-    public Object childBorderColor() {
-        return this.childBorderColor;
+    public Object borderColor() {
+        return this.borderColor;
     }
 
     /**
@@ -215,35 +215,35 @@ public class ItemStyle implements Serializable {
     }
 
     /**
-     * 获取childBorderWidth值
+     * 获取borderWidth值
      */
-    public Integer getChildBorderWidth() {
-        return childBorderWidth;
+    public Integer getborderWidth() {
+        return borderWidth;
     }
 
     /**
-     * 设置childBorderWidth值
+     * 设置borderWidth值
      *
-     * @param childBorderWidth
+     * @param borderWidth
      */
-    public void setChildBorderWidth(Integer childBorderWidth) {
-        this.childBorderWidth = childBorderWidth;
+    public void setborderWidth(Integer borderWidth) {
+        this.borderWidth = borderWidth;
     }
 
     /**
-     * 获取childBorderColor值
+     * 获取borderColor值
      */
-    public Object getChildBorderColor() {
-        return childBorderColor;
+    public Object getborderColor() {
+        return borderColor;
     }
 
     /**
-     * 设置childBorderColor值
+     * 设置borderColor值
      *
-     * @param childBorderColor
+     * @param borderColor
      */
-    public void setChildBorderColor(Object childBorderColor) {
-        this.childBorderColor = childBorderColor;
+    public void setborderColor(Object borderColor) {
+        this.borderColor = borderColor;
     }
 
     /**
