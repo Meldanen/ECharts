@@ -169,6 +169,8 @@ public abstract class Series<T> extends AbstractData<T> implements Chart {
 	private Object coordinateSystem;
 	
 	private Boolean hoverAnimation;
+	
+	private String id;
 
 	/**
 	 * 构造函数
@@ -673,6 +675,15 @@ public abstract class Series<T> extends AbstractData<T> implements Chart {
 
 	public T hoverAnimation(Boolean hoverAnimation) {
 		this.hoverAnimation = hoverAnimation;
+		return (T) this;
+	}
+	
+	public String id() {
+		return this.id;
+	}
+
+	public T id(String id) {
+		this.id = id;
 		return (T) this;
 	}
 
