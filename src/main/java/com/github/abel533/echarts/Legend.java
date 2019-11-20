@@ -87,6 +87,7 @@ public class Legend extends Basic<Legend> implements Data<Legend>, Component {
     private String formatter;
     private Object selector;
     private LegendSelectorPosition selectorPosition;
+    private LabelSelector selectorLabel;
 
     /**
      * 构造函数
@@ -300,6 +301,15 @@ public class Legend extends Basic<Legend> implements Data<Legend>, Component {
     
     public Legend selectorPosition(LegendSelectorPosition selectorPosition) {
         this.selectorPosition = selectorPosition;
+        return this;
+    }
+    
+    public LabelSelector selectorLabel() {
+        return this.selectorLabel;
+    }
+    
+    public Legend selectorLabel(LabelSelector selectorLabel) {
+        this.selectorLabel = selectorLabel;
         return this;
     }
 }
