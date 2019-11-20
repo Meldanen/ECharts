@@ -25,6 +25,7 @@
 package com.github.abel533.echarts;
 
 import com.github.abel533.echarts.code.Align;
+import com.github.abel533.echarts.code.LegendSelectorPosition;
 import com.github.abel533.echarts.code.LegendType;
 import com.github.abel533.echarts.code.Orient;
 import com.github.abel533.echarts.style.TextStyle;
