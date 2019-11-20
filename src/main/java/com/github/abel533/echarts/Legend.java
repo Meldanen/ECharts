@@ -298,7 +298,7 @@ public class Legend extends Basic<Legend> implements Data<Legend>, Component {
         return this.selectorPosition;
     }
     
-    public Legend selectorPosition(Object selectorPosition) {
+    public Legend selectorPosition(LegendSelectorPosition selectorPosition) {
         this.selectorPosition = selectorPosition;
         return this;
     }
