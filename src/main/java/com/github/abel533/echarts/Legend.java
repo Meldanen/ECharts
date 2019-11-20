@@ -84,6 +84,8 @@ public class Legend extends Basic<Legend> implements Data<Legend>, Component {
 
     private Align align;
     private String formatter;
+    private Object selector;
+    private LegendSelectorPosition selectorPosition;
 
     /**
      * 构造函数
@@ -279,6 +281,24 @@ public class Legend extends Basic<Legend> implements Data<Legend>, Component {
             return this;
         }
         this.data().addAll(Arrays.asList(values));
+        return this;
+    }
+    
+    public Object selector() {
+        return this.selector;
+    }
+    
+    public Legend selector(Object selector) {
+        this.selector = selector;
+        return this;
+    }
+    
+    public LegendSelectorPosition selectorPosition() {
+        return this.selectorPosition;
+    }
+    
+    public Legend selectorPosition(Object selectorPosition) {
+        this.selectorPosition = selectorPosition;
         return this;
     }
 }
