@@ -43,4 +43,15 @@ public class AxisLabel extends AbstractLabel<AxisLabel> {
         this.showMaxLabel = showMaxLabel;
         return this;
     }
+    
+	private Boolean inside;
+	
+    public Boolean inside() {
+        return this.inside;
+    }
+
+    public AxisLabel inside(Boolean inside) {
+        this.inside = inside;
+        return this;
+    }
 }
