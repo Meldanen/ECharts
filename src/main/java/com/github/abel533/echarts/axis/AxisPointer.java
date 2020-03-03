@@ -61,4 +61,14 @@ public class AxisPointer {
         return this;
     }
     
+    private Boolean snap;
+    
+    public Boolean snap() {
+        return this.snap;
+    }
+    
+    public AxisPointer snap(Boolean snap) {
+        this.snap = snap;
+        return this;
+    }
 }
