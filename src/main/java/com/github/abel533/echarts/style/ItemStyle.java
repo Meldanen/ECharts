@@ -67,6 +67,8 @@ public class ItemStyle implements Serializable {
      * 二级边框颜色
      */
     private Object borderColor;
+    
+    private Object borderColor0;
 
     private Double opacity;
     
@@ -197,6 +199,15 @@ public class ItemStyle implements Serializable {
     public Object borderColor() {
         return this.borderColor;
     }
+    
+    public ItemStyle borderColor0(Object borderColor0) {
+        this.borderColor0 = borderColor0;
+        return this;
+    }
+    
+    public Object borderColor0() {
+        return this.borderColor0;
+    }
 
     /**
      * 获取breadcrumb值
@@ -236,6 +247,10 @@ public class ItemStyle implements Serializable {
     public Object getborderColor() {
         return borderColor;
     }
+    
+    public Object getborderColor0() {
+        return borderColor0;
+    }
 
     /**
      * 设置borderColor值
@@ -244,6 +259,10 @@ public class ItemStyle implements Serializable {
      */
     public void setborderColor(Object borderColor) {
         this.borderColor = borderColor;
+    }
+    
+    public void setborderColor0(Object borderColor0) {
+        this.borderColor0 = borderColor0;
     }
 
     /**
