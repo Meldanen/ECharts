@@ -24,6 +24,7 @@
 
 package com.github.abel533.echarts.series;
 
+import com.github.abel533.echarts.code.Cursor;
 import com.github.abel533.echarts.code.SeriesType;
 import lombok.Getter;
 import lombok.Setter;
@@ -57,6 +58,8 @@ public class Bar extends Series<Bar> {
      * 类目间柱形距离，默认为类目间距的20%，可设固定值
      */
     private String barCategoryGap;
+    
+    private Cursor cursor;
 
     /**
      * 构造函数
@@ -158,5 +161,14 @@ public class Bar extends Series<Bar> {
     public Bar barCategoryGap(String barCategoryGap) {
         this.barCategoryGap = barCategoryGap;
         return this;
+    }
+    
+    public Cursor cursor() {
+    	return this.cursor;
+    }
+    
+    public Bar cursor(Cursor cursor) {
+    	this.cursor = cursor;
+    	return this;
     }
 }

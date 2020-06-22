@@ -24,6 +24,7 @@
 
 package com.github.abel533.echarts.series;
 
+import com.github.abel533.echarts.code.Cursor;
 import com.github.abel533.echarts.code.DataFilter;
 import com.github.abel533.echarts.code.SeriesType;
 import com.github.abel533.echarts.style.AreaStyle;
@@ -56,6 +57,8 @@ public class Line extends Series<Line> {
      * lineStyle
      */
     private LineStyle lineStyle;
+    
+    private Cursor cursor;
 
     /**
      * 构造函数
@@ -162,5 +165,14 @@ public class Line extends Series<Line> {
     public Line lineStyle(LineStyle lineStyle) {
         this.lineStyle = lineStyle;
         return this;
+    }
+    
+    public Cursor cursor() {
+    	return this.cursor;
+    }
+    
+    public Line cursor(Cursor cursor) {
+    	this.cursor = cursor;
+    	return this;
     }
 }
