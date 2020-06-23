@@ -24,7 +24,6 @@
 
 package com.github.abel533.echarts.series;
 
-import com.github.abel533.echarts.code.Cursor;
 import com.github.abel533.echarts.code.SeriesType;
 import lombok.Getter;
 import lombok.Setter;
@@ -59,7 +58,7 @@ public class Bar extends Series<Bar> {
      */
     private String barCategoryGap;
     
-    private Cursor cursor;
+    private String cursor;
 
     /**
      * 构造函数
@@ -163,11 +162,11 @@ public class Bar extends Series<Bar> {
         return this;
     }
     
-    public Cursor cursor() {
+    public String cursor() {
     	return this.cursor;
     }
     
-    public Bar cursor(Cursor cursor) {
+    public Bar cursor(String cursor) {
     	this.cursor = cursor;
     	return this;
     }
